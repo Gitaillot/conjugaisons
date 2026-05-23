@@ -13592,7 +13592,7 @@ function loadQuestion() {
   } else if (isSubjonctif && q.personne) {
     // "que/qu'" + pronom en minuscules, avec élision
     const pronom = getPronom(q.personne);
-    const hAspire = ['haïr'].includes(q.chef_de_file);
+    const hAspire = ['hair'].includes(q.chef_de_file);
     const formeComplete = q.forme;
     const vowelStart = /^[aeéèêëiîïoôuùûü]/i.test(formeComplete) || (/^h/i.test(formeComplete) && !hAspire);
     const pronElide = (pronom === 'Je' && vowelStart) ? "j'" : pronom.toLowerCase();
@@ -13600,7 +13600,7 @@ function loadQuestion() {
     prefix = (pronStartsVowel ? "qu'" : 'que ') + pronElide;
   } else {
     const pronom = getPronom(q.personne);
-    const hAspire = ['haïr'].includes(q.chef_de_file);
+    const hAspire = ['hair'].includes(q.chef_de_file);
     const formeComplete = q.forme;
     const vowelStart = /^[aeéèêëiîïoôuùûü]/i.test(formeComplete) || (/^h/i.test(formeComplete) && !hAspire);
     prefix = (pronom === 'Je' && vowelStart) ? "J'" : pronom;
