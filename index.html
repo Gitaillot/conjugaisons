@@ -13122,7 +13122,7 @@ function buildOptions(q) {
         // Si la personne est 1re sing. et la forme correcte commence par une voyelle,
         // le pronom affiché sera "J'" — on ne peut proposer que des distracteurs
         // dont l'auxiliaire commence aussi par une voyelle (J'ai, J'avais, J'aurai...).
-        const hAspire = ['haïr'].includes(q.chef_de_file);
+        const hAspire = ['hair'].includes(q.chef_de_file);
         const formeVowelStart = /^[aeéèêëiîïoôuùûü]/i.test(suffix) || (/^h/i.test(suffix) && !hAspire);
         const isJElision = q.personne === '1re pers. sing.' && formeVowelStart;
         const filtreElision = f => {
