@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Les Conjugaisons v1.02 — Manuscrit A — Cahier à lignes</title>
+<title>Les Conjugaisons v4.0</title>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -1031,7 +1031,8 @@
 </div><!-- fin scroll-wrap -->
 
 <script>
-// ── Data (identique à l'original) ──────────────────────────────────────────
+try { localStorage.setItem('conjugaisons_derniere_utilisation', Date.now().toString()); } catch(e) {}
+  // ── Data (identique à l'original) ──────────────────────────────────────────
 const data = [
   {mmr:"6", groupe:"1er", chef_de_file:"jouer", mode:"Indicatif", temps:"Présent", personne:"1re pers. sing.", forme:"joue", traduction:"spielen"},
   {mmr:"6", groupe:"1er", chef_de_file:"jouer", mode:"Indicatif", temps:"Présent", personne:"2e pers. sing.", forme:"joues", traduction:"spielen"},
